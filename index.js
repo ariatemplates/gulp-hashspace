@@ -18,7 +18,6 @@ module.exports.compile = function() {
                 var compileResult = hspCompiler.compile(String(file.contents), file.path);
                 if (!compileResult.errors.length) {
                     file.contents = new Buffer(compileResult.code);
-                    file.path = file.path + '.js';
                 } else {
                     var err = compileResult.errors[0];
                     var errorMsg = 'Compilation error in "'+ file.path +'" at ' + err.line + ':' + err.column + ': ' + err.description;
