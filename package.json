@@ -1,0 +1,18 @@
+{
+    "name": "gulp-hashspace",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ariatemplates/gulp-hashspace.git"
+    },
+    "keywords": [
+        "gulpplugin"
+    ],
+    "dependencies": {
+        "through2": "~0.4.1",
+        "gulp-util": "*"
+    },
+    "peerDependencies": {
+        "hashspace": "*"
+    }
+}
